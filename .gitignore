@@ -3,7 +3,7 @@ venv/
 *.pyc
 __pycache__/
 
-# Node modules (if you ever add them)
+# Node modules
 node_modules/
 
 # Vite build outputs
