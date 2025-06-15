@@ -6,6 +6,10 @@ app = Flask(__name__)
 def home():
     return "Hello from Flask backend!"
 
+@app.route("/linaaa")
+def lina_slays():
+    return "lina bzf harba khawti"
+
 @app.route("/api/decrypt", methods=["POST"])
 def decrypt_message():
     data = request.json

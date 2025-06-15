@@ -1,7 +1,8 @@
 {
-  "name": "cryptography",
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
+  "proxy": "http://localhost:5000",
   "type": "module",
   "scripts": {
     "dev": "vite",
