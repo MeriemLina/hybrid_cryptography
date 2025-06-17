@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/linaaa': 'http://localhost:5000/',
-      '/api': 'http://localhost:5000', // Optional, if you call other endpoints later
+      '/decrypt': 'http://localhost:5000',
     }
   }
 })

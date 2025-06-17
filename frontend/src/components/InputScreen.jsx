@@ -8,7 +8,7 @@ const InputScreen = () => {
 
     const handleSubmit = async () => {
         try {
-            const res = await fetch("/api/decrypt", {
+            const res = await fetch("/decrypt", {
                 method: "POST",
                 headers: {"Content-Type": "application/json" },
                 body: JSON.stringify({message: message})

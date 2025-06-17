@@ -10,7 +10,7 @@ def home():
 def lina_slays():
     return "lina bzf harba khawti"
 
-@app.route("/api/decrypt", methods=["POST"])
+@app.route("/decrypt", methods=["POST"])
 def decrypt_message():
     data = request.json
     print("Received:", data["message"])
