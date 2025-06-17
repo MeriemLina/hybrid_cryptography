@@ -13,8 +13,9 @@ def lina_slays():
 @app.route("/api/decrypt", methods=["POST"])
 def decrypt_message():
     data = request.json
-    # You’ll handle the actual decryption here
-    return jsonify({"status": "ok", "message": "Decryption logic goes here."})
+    print("Received:", data["message"])
+    return jsonify({"message": "Decrypted: " + data["message"]})
+
 
 if __name__ == "__main__":
     app.run(debug=True)
