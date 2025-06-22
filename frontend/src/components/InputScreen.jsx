@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 const InputScreen = () => {
 
+    const navigate = useNavigate();
     const [message, setMessage] = useState("")
     const [response, setResponse] = useState("")
 
@@ -15,8 +17,10 @@ const InputScreen = () => {
             })
 
             const data = await res.json();
-            setResponse(data.message)
-            console.log("backend replied:", data.message)
+            navigate("/animate", { state: { result: data.message } });
+            //console.log(res)
+            //setResponse(data.message)
+            //console.log("backend replied:", res.message)
         }catch (err){
             console.error("failed to send message", err)
         }
