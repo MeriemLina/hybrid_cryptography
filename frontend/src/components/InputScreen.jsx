@@ -18,9 +18,6 @@ const InputScreen = () => {
 
             const data = await res.json();
             navigate("/animate", { state: { result: data.message } });
-            //console.log(res)
-            //setResponse(data.message)
-            //console.log("backend replied:", res.message)
         }catch (err){
             console.error("failed to send message", err)
         }
